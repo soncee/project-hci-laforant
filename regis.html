@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="regis.js"></script>
+    <link rel="stylesheet" href="regis.css">
+    <title>Registration form</title>
+</head>
+<body>
+  
+    <div class="container">
+        <div class="title">Registration</div>
+        <div class="content">
+          <form onsubmit="validateCredentials()" action="regis.html">
+            <div class="user-details">
+              <div class="input-box">
+                <span class="details">Username</span>
+                <input type="text" name="name" id="name" placeholder="Enter your Username" >
+              </div>
+              
+              <div class="input-box">
+                <span class="details">Email</span>
+                <input type="email" name="email" id="email" placeholder="Enter your email" >
+              </div>
+              <div class="input-box">
+                <span class="details">Password</span>
+                <input type="password" name="password" id="password" placeholder="Enter your password" >
+              </div>
+              <div class="input-box">
+                <span class="details">Confirm Password</span>
+                <input type="password" name="password-confrimation" id="password-confirmation" placeholder="Confirm password" >
+              </div>
+              <div class="input-box">
+                <span class="details">Phone Number</span>
+                <input type="tel" name="phone" id="phone" placeholder="Enter your number" >
+              </div>
+              <div class="input-box">
+                <span class="details">date of birth</span>
+                <input type="dob" name="dob" id="dob"placeholder="(DD/MM/YY)" >
+              </div>
+              <div class="input-box">
+                <label>Region :</label>
+                <select class="country" id="country">
+                <option value="">-- Choose Country --</option>
+                <option>Indonesia</option>
+                <option>Singapore</option>
+                <option>Malaysia</option>
+                <option>Hungary</option>
+                <option>Haiti</option>
+                <option>Colombia</option>
+                <option>United States</option>
+                <option>United Kingdom</option>
+                <option>France</option>
+            </select>
+            </div>
+            </div>
+            <div class="agree">
+                <input type="checkbox" name="agree" id="agree">
+                <label >
+                    I agree for the terms
+                </label>
+            </div>
+            <div class="button">
+              <input type="submit" value="Register">
+              <p>lost your way?</p>go back <a href="laforant.html">home</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    
+</body>
+</html>
